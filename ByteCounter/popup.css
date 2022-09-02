@@ -1,0 +1,40 @@
+body {
+    min-width: 500px; /* your desired width */
+    max-width: 100%;
+    position: relative;
+    vertical-align:middle;
+  }
+
+
+th {
+    width: 90%;
+    font-weight: normal;
+    font-size: small;
+}
+.card {
+    margin: 3%;
+}
+.card-body {
+    padding: 0% !important;
+}
+.card-header {
+    padding: 0% !important;
+    background-color: rgb(237 237 237) !important
+}
+
+h5 {
+    margin-left: 3%;
+    margin-top: 3% !important;
+}
+.table {
+    margin-bottom: 0% !important;
+}
+tbody>:last-child {
+    border-bottom-color: transparent;
+}
+.table>:not(:first-child) {
+    border-top: none !important;
+}
+.card-header>table>tbody>tr>th {
+    font-size: medium !important;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="popup.css" rel="stylesheet"/>
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="popup.js"></script>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 0px;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ByteCounter</a>
+  </div>
+</nav>
+<h5>Tasks in TCS</h5>
+<div class="card">
+  <div class="card-header">
+    <table class="table">
+        <tr>
+          <th scope="col">Queue Name</th>
+          <th scope="col">Count</th>
+        </tr>
+    </table>
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <tbody id="queues"></tbody>
+    </table>
+    </div>
+</div>
+<h5>Tasks in Rock</h5>
+<div class="card">
+  <div class="card-header">
+    <table class="table">
+        <tr>
+          <th scope="col">Appeal Role</th>
+          <th scope="col">Count</th>
+        </tr>
+    </table>
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <tbody id="appeals"></tbody>
+    </table>
+    </div>
+</div>
+
+
+
+
+
+<div>
+  <button id="reset">RESET</button>  
+</div>
+
+</body>
+</html>
+
+

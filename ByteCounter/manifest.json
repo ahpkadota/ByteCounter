@@ -1,0 +1,65 @@
+{
+    "manifest_version": 3,
+    "author": "Akiro Kadota",
+    "homepage_url": "https://github.com/ahpkadota/ByteCounter",
+    "name": "ByteCounter",
+    "version": "1.0",
+    "description": "Counts tasks done in TCS & Rock",
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "commands": {
+        "0": {
+            "description": "Paste tags automatically"
+        },
+        "1": {
+            "description": "Shortcut1"
+        },
+        "2": {
+            "description": "Shortcut2"
+        },
+        "3": {
+            "description": "Shortcut3"
+        },
+        "4": {
+            "description": "Shortcut4"
+        },
+        "5": {
+            "description": "Shortcut5"
+        },
+        "6": {
+            "description": "Shortcut6"
+        }
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "24": "images/icon24.png",
+            "32": "images/icon32.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches":  ["https://tcs-sg.bytedance.net/workprocess/*", "https://rock-va.bytedance.net/appeal_center/*"],
+            "js": ["jquery.min.js", "bootstrap.min.js", "content.js"],
+            "css": ["bootstrap.min.css"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": ["<all_urls>"],
+            "resources": ["images/icon32.png", "inject.js"]
+        }
+    ],
+    "host_permissions": ["<all_urls>"],
+    
+    "permissions": [
+        "tabs",
+        "storage",
+        "scripting",
+        "webRequest",
+        "declarativeNetRequest"
+    ]
+    
+}
